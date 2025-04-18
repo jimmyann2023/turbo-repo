@@ -1,6 +1,5 @@
-import colors from 'chalk';
-
 import { cac } from 'cac';
+import colors from 'chalk';
 import { consola } from 'consola';
 
 import { defineLintCommand } from './lint';

@@ -22,10 +22,10 @@
   "dependencies": {
     "cac": "catalog:",
     "chalk": "catalog:",
-    "consola": "catalog:",
-    "execa": "catalog:",
     "circular-dependency-scanner": "catalog:",
+    "consola": "catalog:",
     "depcheck": "catalog:",
+    "execa": "catalog:",
     "publint": "catalog:"
   }
 }

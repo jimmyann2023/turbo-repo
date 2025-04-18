@@ -1,6 +1,7 @@
 import { Linter } from 'eslint';
-import { interopDefault } from '../util';
 import globals from 'globals';
+
+import { interopDefault } from '../util';
 
 export async function react(): Promise<Linter.Config[]> {
   const [pluginReact, pluginReactHooks] = await Promise.all([
@@ -27,12 +28,12 @@ export async function react(): Promise<Linter.Config[]> {
       plugins: {
         'react-hooks': pluginReactHooks,
       },
-      settings: { react: { version: 'detect' } },
       rules: {
         ...pluginReactHooks.configs.recommended.rules,
         // React scope no longer necessary with new JSX transform.
         'react/react-in-jsx-scope': 'off',
       },
+      settings: { react: { version: 'detect' } },
     },
   ];
 }

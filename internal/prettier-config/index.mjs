@@ -3,16 +3,16 @@
  * @type {import("prettier").Config}
  */
 export default {
+  arrowParens: 'always',
+  bracketSpacing: true,
+  embeddedLanguageFormatting: 'auto',
+  endOfLine: 'lf',
+  jsxSingleQuote: false,
   printWidth: 100,
-  tabWidth: 2,
-  useTabs: false,
+  quoteProps: 'as-needed',
   semi: true,
   singleQuote: true,
-  quoteProps: 'as-needed',
-  jsxSingleQuote: false,
+  tabWidth: 2,
   trailingComma: 'es5',
-  bracketSpacing: true,
-  arrowParens: 'always',
-  endOfLine: 'lf',
-  embeddedLanguageFormatting: 'auto',
+  useTabs: false,
 };
