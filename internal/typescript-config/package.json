@@ -2,17 +2,17 @@
   "name": "@repo/typescript-config",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
   "license": "MIT",
+  "type": "module",
+  "files": [
+    "base.json",
+    "nextjs.json",
+    "node.json",
+    "react-library.json"
+  ],
   "publishConfig": {
     "access": "public"
   },
-  "files": [
-    "base.json",
-    "react-library.json",
-    "nextjs.json",
-    "node.json"
-  ],
   "dependencies": {
     "vite": "catalog:"
   }

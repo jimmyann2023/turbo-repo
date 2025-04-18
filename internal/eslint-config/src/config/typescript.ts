@@ -15,9 +15,9 @@ export async function typescript(): Promise<Linter.Config[]> {
       languageOptions: {
         parser: tsParser,
         parserOptions: {
-          sourceType: 'module',
           ecmaVersion: 'latest',
           project: './tsconfig.*.json',
+          sourceType: 'module',
         },
       },
       plugins: {

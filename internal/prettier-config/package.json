@@ -2,13 +2,13 @@
   "name": "@repo/prettier-config",
   "version": "1.0.0",
   "private": true,
-  "main": "./index.mjs",
-  "module": "./index.mjs",
   "license": "MIT",
   "type": "module",
   "files": [
     "dist"
   ],
+  "main": "./index.mjs",
+  "module": "./index.mjs",
   "exports": {
     ".": {
       "default": "./index.mjs"

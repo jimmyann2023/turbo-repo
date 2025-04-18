@@ -1,6 +1,17 @@
 import type { Linter } from 'eslint';
 
-import { javascript, prettier, react, typescript, importPluginConfig } from './config';
+import {
+  ignores,
+  importPluginConfig,
+  javascript,
+  jsdoc,
+  jsonc,
+  node,
+  perfectionist,
+  prettier,
+  react,
+  typescript,
+} from './config';
 
 type FlatConfig = Linter.Config;
 
@@ -13,6 +24,11 @@ async function defineConfig(customConfig: FlatConfig[] = []) {
     typescript(),
     importPluginConfig(),
     react(),
+    jsdoc(),
+    jsonc(),
+    ignores(),
+    node(),
+    perfectionist(),
     ...customConfig,
   ];
 
