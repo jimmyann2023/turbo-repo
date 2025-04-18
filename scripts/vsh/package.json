@@ -1,0 +1,31 @@
+{
+  "name": "@repo/vsh",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "stub": "pnpm unbuild --stub"
+  },
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "vsh": "./bin/vsh.mjs"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "default": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "cac": "catalog:",
+    "chalk": "catalog:",
+    "consola": "catalog:",
+    "execa": "catalog:",
+    "circular-dependency-scanner": "catalog:",
+    "depcheck": "catalog:",
+    "publint": "catalog:"
+  }
+}

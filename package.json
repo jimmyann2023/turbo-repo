@@ -4,17 +4,26 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "check-types": "turbo run check-types",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "vsh lint --format",
+    "lint": "vsh lint"
   },
   "devDependencies": {
-    "prettier": "^3.5.3",
-    "prettier-plugin-tailwindcss": "^0.6.11",
-    "turbo": "^2.5.0"
+    "@repo/typescript-config": "workspace:*",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/prettier-config": "workspace:*",
+    "@repo/vsh": "workspace:*",
+    "@types/node": "catalog:",
+    "prettier": "catalog:",
+    "turbo": "catalog:",
+    "tailwindcss": "catalog:",
+    "typescript": "catalog:",
+    "unbuild": "catalog:",
+    "react": "catalog:",
+    "vite": "catalog:"
   },
-  "packageManager": "pnpm@8.15.6",
+  "packageManager": "pnpm@9.15.7",
   "engines": {
-    "node": ">=18"
+    "node": ">=20.10.0",
+    "pnpm": ">=9.12.0"
   }
 }

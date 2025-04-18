@@ -1,0 +1,21 @@
+{
+  "name": "@repo/prettier-config",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./index.mjs",
+  "module": "./index.mjs",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "default": "./index.mjs"
+    }
+  },
+  "devDependencies": {
+    "prettier": "catalog:",
+    "prettier-plugin-tailwindcss": "catalog:"
+  }
+}
